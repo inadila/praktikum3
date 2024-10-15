@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  background: #fbfbfd;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px; 
+  height: 100%; 
+  display: flex;
+  flex-direction: column; 
+  background: #0b5d74;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+
+.logo .menu-icon {
+color: rgb(255, 255, 255);
+font-size: 24px;
+margin-right: 14px;
+cursor: pointer;
+}
+
+.logo .logo-name{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.sidebar {
+flex-grow: 1;
+padding: 20px 0;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+}
+
+.sidebar-content .list{
+    list-style: none;
+}
+
+.list .nav-link{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    margin: 14px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.list .nav-link:hover {
+background-color: rgb(7, 115, 158);
+}
+
+.nav-link .icon {
+margin-right: 14px;
+font-size: 20px;
+color: rgb(255, 255, 255);
+}
+
+/* Styling for navigation link text */
+.nav-link .link {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* Hover effect for the icon and link */
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+
+/* Bottom content, ensuring it stays at the bottom */
+.bottom-content {
+  margin-top: auto; /* Ensures this part stays at the bottom */
+}
+
+.bottom-content .lists {
+  list-style: none;
+  padding: 0; /* Removes default padding */
+}
+
+/* Hides the overlay, if not needed */
+.overlay {
+  display: none; /* Hides overlay */
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); /* Corrected shadow values */
+}
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* z-index for layering */
+.z-index-1000 {
+  z-index: 1000;
+}
+
+/* Positioning for header elements, adjusting for sidebar */
+.header {
+  position: fixed;
+  top: 5px;
+  left: 280px; /* Adjust based on sidebar width */
+  right: 20px;
+  border-radius: 15px;
+  background: #fff;
+  z-index: 1000;
+}
+
+/* Search container */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%; /* Adjust the width according to your layout */
+  max-width: 1500px; /* Max width for large screens */
+}
+
+/* Search input styling */
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 8px;
+  border-radius: 10px;
+  flex-grow: 1; /* Ensures input fills available space */
+}
+
+/* Header icons container */
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Header icon styling */
+.header-icons .icon {
+  font-size: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #707070;
+}
+
+/* Profile icon container
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+/* Profile image styling */
+/* .profile-icon img {
+  width: 100%;
+  height: auto;
+} */ 
+
+/* Main content area, adjusting for sidebar and header */
+main {
+  margin-left: 260px; /* Provides space for the sidebar */
+  margin-top: 80px; /* Adjust based on the height of the header */
+  padding: 20px;
+}
+
+/* Card container settings */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Individual card settings */
+.card {
+  margin-top: 20px;
+  width: calc(50% - 10px); /* Adjusts the card width */
+  margin-bottom: 20px; /* Space between card rows */
+  padding: 20px;
+  border-radius: 10px;
+  color: #0b5d74;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Different card color schemes */
+.blue {
+  background-color: #37809f; /* Blue color */
+}
+
+.light-blue {
+  background-color: #0b5d74; /* Light blue color */
+}
+
+.purple {
+  background-color: #985986; /* Purple color */
+}
+
+.green {
+  background-color: #1ABC9C; /* Green color */
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-bottom: 200px; /* Menambahkan jarak 20 pixel di bawah h2 */
+}
+
+/* Atau alternatifnya */
+
+.container {
+  margin-top: 200px; /* Menambahkan jarak 20 pixel di atas kontainer */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  color: #777;
+}
+
+.percentage-negative {
+  color: #f44336;
+}
+
+/* Chart styling */
+.chart {
+  flex: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0b5d74;
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart controls styling */
+.chart-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Placeholder for the chart */
+.chart-placeholder {
+  height: 200px; /* Height for chart placeholder */
+  font-family: "Poppins", sans-serif;
+  background-color: #37809f; /* Background color for placeholder */
+  border-radius: 10px;
+}
+
+/* Budget container styling */
+.budget-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Individual budget item styling */
+.budget {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Progress circle styling */
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto 10px;
+}
+
+/* Styling for the text inside the progress circle */
+.progress-circle span {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
